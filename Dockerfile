@@ -26,4 +26,6 @@ VOLUME ["/var/lib/etcd"]
 
 ADD etcd*.sh /usr/local/bin/
 
+RUN chmod a+rwx /usr/local/bin/*.sh
+
 CMD ["/usr/local/bin/etcd.sh"]
